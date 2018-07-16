@@ -45,7 +45,7 @@ class Enemy extends Entity{
     // Update enemis position
     update(dt){
         if (this.x < this.board) {
-            this.x += 150* dt;
+            this.x += 150 * dt;
         }
         else{
             this.x =- this.speed;
@@ -55,8 +55,6 @@ class Enemy extends Entity{
 };
 
 // Now write your own player class
-// This class requires an update(), render() and
-// a handleInput() method.
 class Player extends Entity {
     constructor(){
         super();
